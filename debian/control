@@ -19,12 +19,12 @@ Depends:
  ${misc:Depends},
  ${xinpdriver:Depends},
 Provides:
- ${xinpdriver:Provides}
+ ${xinpdriver:Provides},
+ xserver-xorg-input-kbd (= ${binary:Version})
 Description: XLibre X server -- keyboard input driver
  This package provides the driver for keyboard input devices.
  This package is built from the XLibre xf86-input-keyboard driver module.
 Conflicts: xserver-xorg-input-kbd
-Provides: xserver-xorg-input-kbd (= ${binary:Version})
 
 Package: xserver-xlibre-input-kbd-udeb
 XC-Package-Type: udeb
@@ -35,8 +35,8 @@ Depends:
  ${misc:Depends},
  ${xinpdriver:Depends},
 Provides:
- ${xinpdriver:Provides}
+ ${xinpdriver:Provides},
+ xserver-xorg-input-kbd-udeb (= ${binary:Version})
 Description: XLibre X server -- keyboard input driver
  This is a udeb, or a microdeb, for the debian-installer.
 Conflicts: xserver-xorg-input-kbd-udeb
-Provides: xserver-xorg-input-kbd-udeb (= ${binary:Version})
