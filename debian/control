@@ -5,7 +5,7 @@ Maintainer: NexusSfan <nexussfan@duck.com>
 Build-Depends:
  debhelper-compat (= 13),
  pkgconf,
- xserver-xorg-dev,
+ xserver-xlibre-dev,
  x11proto-dev,
  xutils-dev
 Standards-Version: 4.7.0

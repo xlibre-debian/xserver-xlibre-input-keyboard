@@ -14,7 +14,7 @@ override_dh_install:
 	find debian/tmp -name '*.la' -delete
 	dh_install
 ifeq (kfreebsd, $(DEB_HOST_ARCH_OS))
-	dh_install -pxserver-xorg-input-kbd debian/local/10-x11-kbd.fdi \
+	dh_install -pxserver-xlibre-input-kbd debian/local/10-x11-kbd.fdi \
 		usr/share/hal/fdi/policy/20thirdparty
 endif
 
