@@ -25,9 +25,7 @@
  * authorization from the copyright holder(s) and author(s).
  */
 
-#ifdef HAVE_CONFIG_H
 #include "config.h"
-#endif
 
 #include <xorg-server.h>
 #include "xf86.h"
@@ -122,7 +120,7 @@ ATScancode(InputInfoPtr pInfo, int *scanCode)
                  *scanCode += 0x78;
           }
        break;
-       case KEY_Prefix1: 
+       case KEY_Prefix1:
             pKbd->scanPrefix = (*scanCode == KEY_LCtrl) ? KEY_LCtrl : 0;
             return TRUE;
        case KEY_LCtrl:

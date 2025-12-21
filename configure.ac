@@ -22,10 +22,10 @@
 
 # Initialize Autoconf
 AC_PREREQ([2.60])
-AC_INIT([xf86-input-keyboard],
-        [2.1.0],
-        [https://gitlab.freedesktop.org/xorg/driver/xf86-input-keyboard/-/issues],
-        [xf86-input-keyboard])
+AC_INIT([xlibre-xf86-input-keyboard],
+        [25.0.0],
+        [https://github.com/X11Libre/xf86-input-keyboard/issues],
+        [xlibre-xf86-input-keyboard])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_AUX_DIR(.)
@@ -100,10 +100,5 @@ AM_CONDITIONAL(BSD, [test "x$IS_BSD" = xyes])
 AM_CONDITIONAL(SOLARIS, [test "x$IS_SOLARIS" = xyes])
 AM_CONDITIONAL(HURD, [test "x$IS_HURD" = xyes])
 
-DRIVER_NAME=kbd
-AC_SUBST([DRIVER_NAME])
-
-AC_CONFIG_FILES([Makefile
-                 src/Makefile
-                 man/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile man/Makefile])
 AC_OUTPUT
